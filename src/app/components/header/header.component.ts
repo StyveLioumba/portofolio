@@ -8,6 +8,7 @@ import { Router} from "@angular/router";
 })
 export class HeaderComponent implements OnInit {
 
+  isVisible :boolean = false;
 
   constructor(private router:Router) {
   }
@@ -19,4 +20,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/']).then(r => {})
   }
 
+  onShowMenu($event: MouseEvent) {
+    console.log(this.isVisible)
+    this.isVisible = !this.isVisible;
+  }
 }

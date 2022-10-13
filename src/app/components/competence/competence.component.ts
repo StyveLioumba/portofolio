@@ -27,7 +27,7 @@ export class CompetenceComponent implements OnInit {
       },{
         image:'assets/nodejs.svg',
         title:'NodeJs',
-        description:'Je crée des Api Restfull avec express et springboot .',
+        description:'Je crée des Api Restfull avec express et NestJS .',
         type:"web",
         tag:[
           "javascript",
@@ -36,7 +36,7 @@ export class CompetenceComponent implements OnInit {
       },{
         image:'assets/python.svg',
         title:'Python',
-        description:'Je crée des Api Restfull avec express et springboot .',
+        description:'Je crée des Api Restfull avec Flask et serverless .',
         type:"web",
         tag:[
           "python",
@@ -59,18 +59,7 @@ export class CompetenceComponent implements OnInit {
         type:"mobile",
         tag:[
           "javascript",
-          "html",
-          "css"
-        ]
-      },{
-        image:'assets/ionic.svg',
-        title:'ionic',
-        description:'Besoin d\'une application cross plateform, je conçois et développe des application multiplateform.',
-        type:"mobile",
-        tag:[
-          "typescript",
-          "html",
-          "css"
+          "typescript"
         ]
       }
     ]
