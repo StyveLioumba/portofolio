@@ -1,0 +1,14 @@
+<mat-card class="w-[340px] h-[444px] border hover:border-2 hover:border-amber-400 hover:shadow-xl shadow-amber-400 transition duration-700 ease-in-out">
+  <mat-card-header>
+    <mat-card-title>{{project.name}}</mat-card-title>
+  </mat-card-header>
+  <img src="{{project.image}}" alt="{{project.name}}" class="h-48 w-80 object-cover ">
+  <mat-card-content>
+    <p i18n class="py-3">
+     {{project.description | slice:0:150}}{{project.description.length > 150 ? '...' : ''}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a i18n class="cursor-pointer rounded-full bg-amber-400 border border-amber-400 hover:bg-transparent border-amber-400 transition duration-700 ease-in-out py-2 px-3 " [href]="project.link" target="_blank">Explorer</a>
+  </mat-card-actions>
+</mat-card>

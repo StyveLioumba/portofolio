@@ -1,0 +1,18 @@
+<div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full z-50">
+  <section class="w-full flex flex-col space-y-6">
+    <span i18n id="work" class="text-2xl text-amber-400 tracking-wider font-light font-['Pacifico']">Mes compétences</span>
+    <span i18n class="text-xl font-['Pacifico']">WEB</span>
+    <div class="grid grid-cols-1 md:grid-cols-3  gap-4 mb-5">
+      <div *ngFor="let competence of competences | filter:webType:'web'">
+        <competence-item [competence]="competence" ></competence-item>
+      </div>
+    </div>
+
+    <span i18n class="text-xl font-['Pacifico']">Mobile</span>
+    <div class="grid grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div *ngFor="let competence of competences  | filter:mobileType:'mobile'">
+        <competence-item [competence]="competence" ></competence-item>
+      </div>
+    </div>
+  </section>
+</div>
